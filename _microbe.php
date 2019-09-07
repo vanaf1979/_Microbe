@@ -36,7 +36,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 
 /**
- * Use dependencies
+ * Use dependencies.
  */
 use \Whoops\Handler\PrettyPageHandler;
 use \Whoops\Run;
@@ -51,7 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
  * Microbe
  * 
- * Main Microbe plugin class
+ * Main Microbe plugin class.
  *
  * @package Microbe
  */
