@@ -7,6 +7,9 @@
  * @copyright           2019 Stephan Nijman
  * @license             GPL-2.0-or-later
  * @version             1.0.0
+ * 
+ * @uses Whoops https://github.com/filp/whoops
+ * @uses Var-dumper https://github.com/symfony/var-dumper
  *
  * @wordpress-plugin
  * Plugin Name:         _Microbe
