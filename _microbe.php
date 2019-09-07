@@ -95,22 +95,6 @@ final class Microbe {
 
 
     /**
-     * __construct.
-     *
-     * Initialize properties.
-     *
-     * @since 1.0.0
-     */
-    public function __construct() {
-
-        $this->whoops_enabled = \get_option('_microbe_error_screen_enabled'); 
-
-        $this->editor = \get_option('_microbe_editor');
-
-    }
-
-
-    /**
      * instance.
      *
      * Return a instance of this class.
@@ -134,6 +118,40 @@ final class Microbe {
 
 
     /**
+     * __clone
+     * 
+	 * Throw error on object clone.
+	 *
+	 * @since 1.0.0
+     * 
+	 * @access public
+	 * @return void
+	 */
+	public function __clone() {
+		
+        \_doing_it_wrong( __FUNCTION__ , \esc_html__( 'Cheating huh?', '_micobe' ), '1.0' );
+        
+    }
+
+    
+	/**
+     * __wakeup
+     * 
+	 * Disable unserializing of the class.
+	 *
+	 * @since 1.0.0
+     * 
+	 * @access public
+	 * @return void
+	 */
+	public function __wakeup() {
+
+        \_doing_it_wrong( __FUNCTION__ , \esc_html__( 'Cheating huh?' , '_micobe' ) , '1.0' );
+        
+	}
+
+
+    /**
      * init
      *
      * initialize the plugin.
@@ -144,6 +162,10 @@ final class Microbe {
      * @return void
      */
     public function init() : void {
+
+        $this->whoops_enabled = \get_option('_microbe_error_screen_enabled'); 
+
+        $this->editor = \get_option('_microbe_editor');
 
         if( WP_DEBUG ) {
 
