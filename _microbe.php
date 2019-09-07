@@ -121,6 +121,9 @@ final class Microbe {
      * __clone
      * 
      * Throw error on object clone.
+     * 
+     * @uses _doing_it_wrong https://developer.wordpress.org/reference/functions/_doing_it_wrong/
+     * @uses esc_html__ https://developer.wordpress.org/reference/functions/esc_html__/
      *
      * @since 1.0.0
      * 
@@ -138,6 +141,9 @@ final class Microbe {
      * __wakeup
      * 
      * Disable unserializing of the class.
+     * 
+     * @uses _doing_it_wrong https://developer.wordpress.org/reference/functions/_doing_it_wrong/
+     * @uses esc_html__ https://developer.wordpress.org/reference/functions/esc_html__/
      *
      * @since 1.0.0
      * 
@@ -155,6 +161,8 @@ final class Microbe {
      * init
      *
      * initialize the plugin.
+     * 
+     * @uses get_option https://developer.wordpress.org/reference/functions/get_option/
      *
      * @since 1.0.0
      * 
