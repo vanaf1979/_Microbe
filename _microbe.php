@@ -120,35 +120,35 @@ final class Microbe {
     /**
      * __clone
      * 
-	 * Throw error on object clone.
-	 *
-	 * @since 1.0.0
+     * Throw error on object clone.
+     *
+     * @since 1.0.0
      * 
-	 * @access public
-	 * @return void
-	 */
-	public function __clone() {
-		
+     * @access public
+     * @return void
+     */
+    public function __clone() {
+
         \_doing_it_wrong( __FUNCTION__ , \esc_html__( 'Cheating huh?', '_micobe' ), '1.0' );
-        
+
     }
 
     
-	/**
+    /**
      * __wakeup
      * 
-	 * Disable unserializing of the class.
-	 *
-	 * @since 1.0.0
+     * Disable unserializing of the class.
+     *
+     * @since 1.0.0
      * 
-	 * @access public
-	 * @return void
-	 */
-	public function __wakeup() {
+     * @access public
+     * @return void
+     */
+    public function __wakeup() {
 
         \_doing_it_wrong( __FUNCTION__ , \esc_html__( 'Cheating huh?' , '_micobe' ) , '1.0' );
-        
-	}
+
+    }
 
 
     /**
