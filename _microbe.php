@@ -52,8 +52,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * Microbe
  * 
  * Main Microbe plugin class
- * 
- * @author Stephan Nijman <vanaf1979@gmail.com>
  *
  * @package Microbe
  */
