@@ -81,6 +81,17 @@ final class Microbe {
 
 
     /**
+     * whoops_enabled
+     * 
+     * @var string $whoops_enabled Is the error screen enabled.
+     * 
+     * @access private
+     * @since 1.0.0
+     */
+    private $whoops_enabled = null;
+
+
+    /**
      * __construct.
      *
      * Initialize properties.
@@ -88,6 +99,8 @@ final class Microbe {
      * @since 1.0.0
      */
     public function __construct() {
+
+        $this->whoops_enabled = \get_option('_microbe_error_screen_enabled'); 
 
         $this->editor = \get_option('_microbe_editor');
 
@@ -155,9 +168,7 @@ final class Microbe {
      */
     private function init_whoops() : void {
 
-        $whoop_enabled = \get_option('_microbe_error_screen_enabled'); 
-
-        if( $whoop_enabled == 'yes' || $whoop_enabled == '' ) {
+        if( $this->whoops_enabled == 'yes' || $this->whoops_enabled == '' ) {
 
             $handler = new PrettyPageHandler;
 
