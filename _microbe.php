@@ -132,7 +132,7 @@ final class Microbe {
      */
     public function __clone() {
 
-        \_doing_it_wrong( __FUNCTION__ , \esc_html__( 'Cheating huh?', '_microbe' ), '1.0' );
+        \_doing_it_wrong( __METHOD__ , \esc_html__( 'Cheating huh?', '_microbe' ), '1.0' );
 
     }
 
@@ -152,7 +152,7 @@ final class Microbe {
      */
     public function __wakeup() {
 
-        \_doing_it_wrong( __FUNCTION__ , \esc_html__( 'Cheating huh?' , '_microbe' ) , '1.0' );
+        \_doing_it_wrong( __METHOD__ , \esc_html__( 'Cheating huh?' , '_microbe' ) , '1.0' );
 
     }
 
