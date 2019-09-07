@@ -212,7 +212,7 @@ final class Microbe {
             }
             
             $whoops = new Run;
-            $whoops->prependHandler($handler);
+            $whoops->prependHandler( $handler );
             $whoops->register();
 
         }
