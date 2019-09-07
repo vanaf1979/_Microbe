@@ -1,0 +1,22 @@
+{
+    "name": "vanaf1979/microbe",
+    "description": "A beter debugging experience for WordPress",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephan",
+            "email": "vanaf1979@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Microbe\\": ""
+        },
+        "files": ["helpers.php"]
+    },
+    "require": {
+        "filp/whoops": "^2.5",
+        "symfony/var-dumper": "^3.4"
+    }
+}
