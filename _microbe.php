@@ -199,10 +199,10 @@ final class Microbe {
      *
      * @since 1.0.0
      * 
-     * @access public
+     * @access private
      * @return void
      */
-    public function register_wp_hooks() : void {
+    private function register_wp_hooks() : void {
         
         \add_action( 'admin_init', array( $this , 'settings_api_init' ) );
         \add_action( 'init', array( $this , 'register_settings' ) );
